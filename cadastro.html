@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Socio Flamengo </title>
+<style>
+
+a:link, a:visited {
+  background-color: #b30e21;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: arial black;
+}
+
+
+a:hover, a:active {
+  background-color: #b30e21;
+}
+ table, th, td {
+  border: 1px solid black;
+  background-color: white;
+  font-family: arial black;
+
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #b30e21;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #b30e21;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.divSticky {
+  background-color: black;
+  font-family: Arial Black;
+  font-size: 100%;
+  top: 0%;
+  left: 400%;
+  position: sticky;
+  color: red  
+}
+
+h1 {
+  text-align: center;
+  color: red;
+  text-shadow: 1px 1px black;
+
+} 
+
+</style>
+</head>
+<body>
+  <div class="divs divSticky"> <h1>Flamengo </h1> </div> 
+
+<h1> Cadastro </h1>
+
+<h2>Preencha o formulário para cadastro</h2>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">Nome</label>
+    <input type="text" id="fname" name="firstname" placeholder="Seu nome">
+
+    <label for="lname">Sobrenome</label>
+    <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome">
+
+    <label for="diaa">Data de Nascimento</label>
+    <input type="date" id="diaa" name="diaa" />
+    <br>
+    <label for="fname">Telefone</label>
+    <input type="number" id="number" name="numero" placeholder="(00)0.0000-0000">
+
+    <br>
+   <label for="email_cad">Seu e-mail</label>
+   <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@flapress.com"/>  
+          
+
+    <br>
+
+  <p>  <label for="plano">Plano Desejado:</label> </p>
+    <select id="plano" name="plano">
+      <option value="sfla">Sócio Flamenguista</option>
+      <option value="rbf">Rubro-Negro Fiel</option>
+      <option value="mengaov">Mengão Vip</option>
+       <option value="socio">Sócio Fla Premium</option>
+        <option value="Urubu-Rei">Urubu-Rei</option>
+    </select>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<br>
+<center>
+  <a href="index.html">Pagina Inicial.</a>
+ </center>
+</body>
+</html>
